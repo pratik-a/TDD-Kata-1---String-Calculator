@@ -40,4 +40,12 @@ class expect
         Assert.assertEquals(15,chk.ADD("7,8"));
         Assert.assertEquals(9,chk.ADD("9,0"));
     }
+	
+	@Test
+    public void check3() 
+    {
+    	StringCalculator chk = new StringCalculator();
+        Assert.assertEquals(3,chk.ADD("1,2"));
+        
+    }
 }
