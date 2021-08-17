@@ -22,12 +22,14 @@ with a method public int Add(string numbers)
 <br><br>
 ---
 3. Allow the Add method to handle new lines between numbers (instead of commas).
+       
         1. the following input is ok: “1\n2,3” == 6
         2. the following is INVALID input so do not expect it : “1,\n” (not need to write a 
 test for it) 
  <br><br>  
  ---
 4. Support different delimiters: 
+        
         to change a delimiter, the beginning of the string will contain a separate line
         “//[delimiter]\n[numbers…]”
         for example 
@@ -44,10 +46,12 @@ and the negative that was passed.
 <br><br>
 ---
 7. Using TDD, Add a method to StringCalculator called public int GetCalledCount() that returns how many times Add() was invoked.
+        
         Remember - Start with a failing (or even non compiling) test.
 <br><br>
 ---
 8. (.NET Only) Using TDD, Add an event to the StringCalculator class named public event Action<string, int> AddOccured, that is triggered after every Add() call.
+        
         Hint: 
         Create the event declaration first: 
         then write a failing test that listens to the event 
@@ -63,18 +67,19 @@ and the negative that was passed.
 <br><br>
 ---
  9. Numbers bigger than 1000 should be ignored, for example:
-       
-       2 + 1001 == 2
+        
+        2 + 1001 == 2
 <br><br>
 ---
 10. Delimiters can be of any length with the following format:
-       
-       “//[delimiter]\n” 
+        
+        “//[delimiter]\n” 
         for example: 
         “//[*]\n1**2**3” == 6
 <br><br>
 ---
 11. Allow multiple delimiters like this:
+        
         “//[delim1][delim2]\n” 
         for example 
         “//[*][%]\n1*2%3” == 6.
