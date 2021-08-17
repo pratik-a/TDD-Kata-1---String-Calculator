@@ -19,5 +19,12 @@ class expect
         Assert.assertEquals(0,chk.ADD(" "));
     }
 	
+	@Test
+    public void check1() 
+    {
+    	StringCalculator chk = new StringCalculator();
+        Assert.assertEquals(1,chk.ADD("1"));
+        
+    }
 	
 }
