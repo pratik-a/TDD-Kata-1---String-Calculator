@@ -1,5 +1,8 @@
 # TDD Kata-1 - String-Calculator
 ---
+## TDD
+---
+Test Driven Development (TDD) is software development approach in which test cases are developed to specify and validate what the code will do. In simple terms, test cases for each functionality are created and tested first and if the test fails then the new code is written in order to pass the test and making code simple and bug-free. 
 <br><br>
 1. In a test-first manner, create a simple class class StringCalculator
 with a method public int Add(string numbers)
