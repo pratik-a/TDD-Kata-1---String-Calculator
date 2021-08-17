@@ -109,6 +109,9 @@ class expect
     {
     	StringCalculator chk = new StringCalculator();
         Assert.assertEquals(3,chk.ADD("1+2"));
-        
+        Assert.assertEquals(7,chk.ADD("3+4"));
+        Assert.assertEquals(11,chk.ADD("5+6"));
+        Assert.assertEquals(15,chk.ADD("7+8"));
+        Assert.assertEquals(9,chk.ADD("9+0"));
     }
 }
