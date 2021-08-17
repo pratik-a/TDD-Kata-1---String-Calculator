@@ -120,6 +120,9 @@ class expect
     {
     	StringCalculator chk = new StringCalculator();
         Assert.assertEquals(9,chk.ADD("1+8+1001"));
-        
+        Assert.assertEquals(3,chk.ADD("3+4000"));
+        Assert.assertEquals(1100,chk.ADD("500+600"));
+        Assert.assertEquals(8,chk.ADD("7000+8"));
+        Assert.assertEquals(0,chk.ADD("9000+0"));
     }
 }
