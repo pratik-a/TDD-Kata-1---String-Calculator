@@ -62,4 +62,12 @@ class expect
         Assert.assertEquals(15,chk.ADD("7\n8"));
         Assert.assertEquals(9,chk.ADD("9\n0"));
     }
+	
+	@Test
+    public void check5() 
+    {
+		StringCalculator chk = new StringCalculator();
+        Assert.assertEquals(6,chk.ADD("/;;;;/;;;[***]\n1*2;;%3"));
+        
+    }
 }
