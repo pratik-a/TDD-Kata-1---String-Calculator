@@ -68,6 +68,9 @@ class expect
     {
 		StringCalculator chk = new StringCalculator();
         Assert.assertEquals(6,chk.ADD("/;;;;/;;;[***]\n1*2;;%3"));
-        
+        Assert.assertEquals(7,chk.ADD(";;;;;//;3***;*;*;\n\n4**;;**//"));
+        Assert.assertEquals(11,chk.ADD("//5/\\n/[%%%][*****][;;;;][****]\\n[%%%%]\n6"));
+        Assert.assertEquals(15,chk.ADD("[]%***//7\n8;;;"));
+        Assert.assertEquals(9,chk.ADD("/////;[*****];\\n//9\n;;%%%%%%;****;[;;;\\n[[;]]]0"));
     }
 }
