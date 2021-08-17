@@ -73,4 +73,19 @@ class expect
         Assert.assertEquals(15,chk.ADD("[]%***//7\n8;;;"));
         Assert.assertEquals(9,chk.ADD("/////;[*****];\\n//9\n;;%%%%%%;****;[;;;\\n[[;]]]0"));
     }
+	
+	@Test
+	public void check6()  
+	 {
+		StringCalculator chk = new StringCalculator();
+	    try
+	    {
+	    	chk.ADD("1,-3,-7,-2,-8,-5");
+	    }
+	    catch (RuntimeException e)
+		{
+	    		Assert.assertEquals("Negatives not allowed -3-7-2-8-5", e.getMessage());
+		}
+		
+	 }
 }
