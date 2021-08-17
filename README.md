@@ -8,11 +8,11 @@ with a method public int Add(string numbers)
     1. The method can take 0, 1 or 2 numbers, and will return their sum
 (for an empty string it will return 0) 
 for example 
-“” == 0 , “1” == 1 , “1,2” == 3
+“” == 0 , “1” == 1 , “1,2” == 3<br>
     2. Start with the simplest test case of an empty string and move to one & two 
-numbers
+numbers<br>
     3. Remember to solve things as simply as possible so that you force yourself to 
-write tests you did not think about
+write tests you did not think about<br>
     4. Remember to refactor after each passing test
 <br><br>
 2. Allow the Add method to handle an unknown amount of numbers
