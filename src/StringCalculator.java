@@ -6,7 +6,7 @@ public class StringCalculator
 		count++;
         if(numbers.equals("") || numbers.equals(" "))
         {
-        	return 0;
+        	return 0; // return for null or blank string
         }   
         else 
         {
@@ -18,6 +18,7 @@ public class StringCalculator
         		if(ch[i]!='/' && ch[i]!=',' && ch[i]!='[' && ch[i]!=']' && ch[i]!='%' && ch[i]!='*' && ch[i]!='n' && ch[i]!='\n' && ch[i]!='\\' && ch[i]!=';')
         		{
         			int k=0;
+        			// calculation for negative numbers
         			String negativenum="";
         			if(ch[i]<0)
         			{
@@ -28,7 +29,7 @@ public class StringCalculator
         			{
         				throw new RuntimeException("Negatives not allowed "+negativenum);
         			}
-        			
+        			// calculation for positive numbers with +
         			if(ch[i]=='+')
         			{
         		        sum = 0;
@@ -43,7 +44,7 @@ public class StringCalculator
         		 	    }
         				return sum;
         			}
-        			
+        			// calculation for cases contaning delimeters
         			sum = sum + Character.getNumericValue(ch[i]);
         		}
         	}
@@ -53,6 +54,6 @@ public class StringCalculator
 	
 	public int GetCalledCount()
 	{
-		return count;
+		return count; // return of number of times ADD called
 	}
 }
