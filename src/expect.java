@@ -125,4 +125,11 @@ class expect
         Assert.assertEquals(8,chk.ADD("7000+8"));
         Assert.assertEquals(0,chk.ADD("9000+0"));
     }
+	
+	@Test
+    public void check10() 
+    {
+    	StringCalculator chk = new StringCalculator();
+        Assert.assertEquals(39,chk.GetCalledCount());
+    }
 }
