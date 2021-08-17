@@ -88,4 +88,19 @@ class expect
 		}
 		
 	 }
+	
+	@Test
+	public void check7()  
+	 {
+		StringCalculator chk = new StringCalculator();
+	    try
+	    {
+	    	chk.ADD("7,5,9,9,5,-4");
+	    }
+	    catch (RuntimeException e)
+		{
+	    		Assert.assertEquals("Negatives not allowed -4", e.getMessage());
+	    }
+		
+	 }
 }
