@@ -103,4 +103,12 @@ class expect
 	    }
 		
 	 }
+	
+	@Test
+    public void check8() 
+    {
+    	StringCalculator chk = new StringCalculator();
+        Assert.assertEquals(3,chk.ADD("1+2"));
+        
+    }
 }
