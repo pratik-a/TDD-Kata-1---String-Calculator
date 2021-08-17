@@ -6,13 +6,13 @@ with a method public int Add(string numbers)
 ---
 <br>
         1. The method can take 0, 1 or 2 numbers, and will return their sum
-(for an empty string it will return 0) 
-for example 
-“” == 0 , “1” == 1 , “1,2” == 3<br><br>
+        (for an empty string it will return 0) 
+        for example 
+        “” == 0 , “1” == 1 , “1,2” == 3<br><br>
         2. Start with the simplest test case of an empty string and move to one & two 
-numbers<br><br>
+        numbers<br><br>
         3. Remember to solve things as simply as possible so that you force yourself to 
-write tests you did not think about<br><br>
+        write tests you did not think about<br><br>
         4. Remember to refactor after each passing test
 <br><br>
 2. Allow the Add method to handle an unknown amount of numbers
@@ -26,12 +26,12 @@ test for it)
  <br><br>  
 4. Support different delimiters: 
 ---
-to change a delimiter, the beginning of the string will contain a separate line
-“//[delimiter]\n[numbers…]”
-for example 
-“//;\n1;2” == 3 
-since the default delimiter is ‘;’ .
-Note: All existing scenarios and tests should still be supported
+        to change a delimiter, the beginning of the string will contain a separate line
+        “//[delimiter]\n[numbers…]”
+        for example 
+        “//;\n1;2” == 3 
+        since the default delimiter is ‘;’ .
+        Note: All existing scenarios and tests should still be supported
 <br><br>
 5. Calling Add with a negative number will throw an exception “negatives not allowed” -
 and the negative that was passed. 
@@ -40,46 +40,42 @@ and the negative that was passed.
 6. If there are multiple negatives, show all of them in the exception message
 ---
 <br><br>
-7. Using TDD, Add a method to StringCalculator
-called public int GetCalledCount()
-that returns how many times Add() was invoked.
+7. Using TDD, Add a method to StringCalculator called public int GetCalledCount() that returns how many times Add() was invoked.
 ---
-Remember - Start with a failing (or even non compiling) test.
+        Remember - Start with a failing (or even non compiling) test.
 <br><br>
-8. (.NET Only) Using TDD, Add an event to the StringCalculator class named 
-public event Action<string, int> AddOccured , 
-that is triggered after every Add() call.
+8. (.NET Only) Using TDD, Add an event to the StringCalculator class named public event Action<string, int> AddOccured, that is triggered after every Add() call.
 ---
-Hint: 
-Create the event declaration first: 
-then write a failing test that listens to the event 
-and proves it should have been triggered when calling Add(). 
-Hint 2: 
-Example:
- string giveninput = null;
- sc.AddOccured += delegate(string input, 
-int result)
- {
- giveninput = input;
- };
+        Hint: 
+        Create the event declaration first: 
+        then write a failing test that listens to the event 
+        and proves it should have been triggered when calling Add(). 
+        Hint 2: 
+        Example:
+        string giveninput = null;
+        sc.AddOccured += delegate(string input, 
+        int result)
+         {
+                giveninput = input;
+         };
 <br><br>
  9. Numbers bigger than 1000 should be ignored, for example:
  ---
-2 + 1001 == 2
+        2 + 1001 == 2
 <br><br>
 10. Delimiters can be of any length with the following format:
 ---
-“//[delimiter]\n” 
-for example: 
-“//[*]\n1**2**3” == 6
+        “//[delimiter]\n” 
+        for example: 
+        “//[*]\n1**2**3” == 6
 <br><br>
 11. Allow multiple delimiters like this:
 ---
-“//[delim1][delim2]\n” 
-for example 
-“//[*][%]\n1*2%3” == 6.
+        “//[delim1][delim2]\n” 
+        for example 
+        “//[*][%]\n1*2%3” == 6.
 <br><br>
 12. make sure you can also handle multiple delimiters with length longer than one char 
 ---
-for example 
-“//[*][%%]\n1*2%%3” == 6.
+        for example 
+        “//[*][%%]\n1*2%%3” == 6.
