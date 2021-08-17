@@ -10,7 +10,8 @@ class expect
 	@BeforeEach
 	void setUp()  {
 	}
-
+	
+	// test case for empty and blank string
 	@Test
 	public void check() 
     {
@@ -19,6 +20,7 @@ class expect
         Assert.assertEquals(0,chk.ADD(" "));
     }
 	
+	// test case for single integer
 	@Test
     public void check1() 
     {
@@ -30,6 +32,7 @@ class expect
         Assert.assertEquals(9,chk.ADD("9"));
     }
 	
+	// test case for 2 integer
 	@Test
     public void check2() 
     {
@@ -41,6 +44,7 @@ class expect
         Assert.assertEquals(9,chk.ADD("9,0"));
     }
 	
+	// test case for multiple integer
 	@Test
     public void check3() 
     {
@@ -52,6 +56,7 @@ class expect
         Assert.assertEquals(45,chk.ADD("1,2,3,4,5,6,7,8,9,0"));
     }
 	
+	// test case for \n
 	@Test
     public void check4()
     {
@@ -63,6 +68,7 @@ class expect
         Assert.assertEquals(9,chk.ADD("9\n0"));
     }
 	
+	// test case for different delimeters
 	@Test
     public void check5() 
     {
@@ -74,6 +80,7 @@ class expect
         Assert.assertEquals(9,chk.ADD("/////;[*****];\\n//9\n;;%%%%%%;****;[;;;\\n[[;]]]0"));
     }
 	
+	// test case for negative integer
 	@Test
 	public void check6()  
 	 {
@@ -89,6 +96,7 @@ class expect
 		
 	 }
 	
+	// test case for negative integer
 	@Test
 	public void check7()  
 	 {
@@ -104,6 +112,7 @@ class expect
 		
 	 }
 	
+	// test case for +
 	@Test
     public void check8() 
     {
@@ -115,6 +124,7 @@ class expect
         Assert.assertEquals(9,chk.ADD("9+0"));
     }
 	
+	// test case for integer greater 1000
 	@Test
     public void check9() 
     {
@@ -126,6 +136,7 @@ class expect
         Assert.assertEquals(0,chk.ADD("9000+0"));
     }
 	
+	// test case to check number of times ADD called
 	@Test
     public void check10() 
     {
