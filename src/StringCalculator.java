@@ -1,3 +1,12 @@
+/*
+ * @author Pratik Awasthi
+ */
+
+/*
+ * @admin Pratik Awasthi
+ */
+
+
 public class StringCalculator 
 {
 	public static int count=0;
