@@ -46,6 +46,9 @@ class expect
     {
     	StringCalculator chk = new StringCalculator();
         Assert.assertEquals(3,chk.ADD("1,2"));
-        
+        Assert.assertEquals(10,chk.ADD("1,2,3,4"));
+        Assert.assertEquals(21,chk.ADD("1,2,3,4,5,6"));
+        Assert.assertEquals(36,chk.ADD("1,2,3,4,5,6,7,8"));
+        Assert.assertEquals(45,chk.ADD("1,2,3,4,5,6,7,8,9,0"));
     }
 }
